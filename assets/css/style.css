@@ -41,9 +41,17 @@ header {
 
 .nav-list ul {
     display: flex;
-    gap: 15px;
     justify-content: center;
     list-style: none;
+}
+
+.nav-list ul a {
+    margin: 15px;
+    transition: color .5s;
+}
+
+.nav-list ul a:hover {
+    color: var(--primary-color-1);
 }
 
 .nav-link {
@@ -113,6 +121,14 @@ header {
         padding-bottom: 1rem;
     }
 
+    .mobile-menu ul a {
+        transition: color .5s;
+    }
+
+    .mobile-menu ul a:hover {
+        color: var(--primary-color-1);
+    }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
@@ -125,5 +141,9 @@ header {
 
     .mobile-menu .login-button button {
         width: 100%;
+    }
+
+    .open {
+        display: block;
     }
 }
