@@ -2,7 +2,8 @@
 
 :root {
     --neutral-color-1: #24252a;
-    --primary-color-1: #0187a7;
+    --neutral-color-2: #464646;
+    --primary-color-1: #0f6970;
     --text-color: #fff;
 }
 
@@ -11,4 +12,63 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: var(--neutral-color-1);
+    box-shadow: 0px 3px 10px var(--neutral-color-2);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: var(--text-color);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--primary-color-1);
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.login-button button:hover {
+    background-color: #2a9299;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--text-color);
 }
